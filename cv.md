@@ -21,3 +21,19 @@ function multiply(a, b){
     return a * b
   }
 ```
+
+## Education:
+Vocational school in the city of Taboshar by profession an electrician, 2010-2012
+
+## Courses:
+* [HTML](https://ru.code-basics.com/languages/html)
+* [CSS](https://ru.code-basics.com/languages/css)
+* [JS basic](https://learn.javascript.ru/)
+* [Python](https://stepik.org/course/58852/)
+
+## Languages:
+* English - Pre-intermediate
+* Russian - Upper-intermediate
+* Turkish - Intermediate
+* Persian - Pre-intermediate/Intermediate
+* Uzbek - Native
