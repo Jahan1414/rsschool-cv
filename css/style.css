@@ -1,3 +1,85 @@
+
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+
+
+.all__page {
+    position: absolute;
+    width: 650px;
+    height: 850px;
+    left: 350px;
+    background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 93.75%);
+}
+
+.both__column {
+
+}
+
+.left__column {
+    position: absolute;
+    width: 296px;
+    height: 830px;
+    margin: 10px 340px 10px 14px;
+    background: rgba(196, 196, 196, 0.3);
+    border-radius: 10px;
+}
+
+.header {
+    position: absolute;
+    width: 272px;
+    height: 116.02px;
+    padding: 10px 12px 0 11px;
+}
+
+.my__foto{
+    position: absolute;
+    width: 110px;
+    height: 116.02px;
+}   
+.my__foto > img{
+    background: url(./img/MYIMG.jpg);
+    border-radius: 93px;
+}
+
+.name {
+    position: absolute;
+    left: 120px;
+    width: 148px;
+    height: 116.02px;
+    margin: 0;
+    padding-left: 15px;
+}
+
 h1 {
-    color: blueviolet;
+    
+    margin: 0;
+    font-weight: 500;
+    font-size: 30px;
+    
+    color: #FFFFFF;  
+}
+
+h2 {
+    margin: 0;
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+
+color: #CECACA;
+}
+
+.right__column {
+    position: absolute;
+    width: 321px;
+    height: 830px;
+    margin: 10px 13px 10px 316px;
+    background: #FFFFFF;
+    border-radius: 10px;
 }
