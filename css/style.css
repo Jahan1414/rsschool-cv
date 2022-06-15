@@ -3,23 +3,28 @@
 h1,
 h2,
 h3 {
-    font-family: 'Montserrat';
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
+    font-weight: 500;
 }
 p {
     margin: 0;
 }
-li {
-    list-style-type: none; /* Убираем маркеры */
-}
+
 ul {
     margin: 0;
     padding: 0;
+    list-style-type: none; /* Убираем маркеры */
 }
 
 /*-------Page--------------------------------------------------*/
 body {
     margin: 0;
+    font-family: 'Calibri', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    
 }
 .all__page {
     position: absolute;
@@ -66,10 +71,8 @@ body {
 }
 
 h1 {
-    
     margin: 0;
-    font-weight: 500;
-    font-size: 30px;
+    font-size: 27px;
     
     color: #FFFFFF;  
 }
@@ -81,37 +84,102 @@ h2 {
     font-size: 15px;
     line-height: 18px;
 
-color: #CECACA;
+    color: #CECACA;
 }
-.main {
+
+.contacts {
     position: absolute;
     left: 21px; right: 15px; top: 146px;
-}
-.contacts {
-    font-family: 'Calibri';
     font-style: normal;
-    font-weight: 400;
     font-size: 15px;
-    line-height: 18px;
-
     color: #FFFFFF;
+    
 }
 .mail {
     display: flex;
     width: 260px; height: 38px;
-
-    
     background: rgba(196, 196, 196, 0.35);
     border-radius: 10px;
+}
+.mail > img {
+    padding: 11px 0 0 11px;
+}
+.mail > p {
+    padding: 11px 11px 11px 20px;
 }
 .telegram {
     display: flex;
     width: 260px; height: 38px;
-    margin-top: 5px;
+    margin-top: 10px;
     background: rgba(196, 196, 196, 0.35);
     border-radius: 10px;
 }
+.telegram > img {
+    padding: 11px 0 0 11px;
+}
+.telegram > p {
+    padding: 11px 11px 11px 20px;
+}
+.discord {
+    display: flex;
+    width: 260px; height: 38px;
+    margin-top: 10px;
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: 10px;
+}
+.discord > img {
+    padding: 11px 0 0 11px;
+}
+.discord > p {
+    padding: 11px 11px 11px 20px;
+}
 
+.languages {
+    position: absolute;
+    left: 21px; right: 15px; top: 328px; bottom: 350px;
+    width: 260px; height: 266px;
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+.languages > h3 {
+    margin: 14px 0 0 40px;
+}
+.languages > ul {
+    margin: 10px 20px;
+}
+.lang {
+    display: flex;
+    padding-bottom: 10px;
+}
+.lang > p {
+    width: 80px;
+}
+.ellipse > li {
+    left: 200px;
+    display: inline-block;
+    border: 1px solid;
+    width: 85px; right: 19px;
+    margin-right: 4px;
+    background: rgba(84, 84, 84, 0.6);
+    width: 8px; height: 8px;
+    border-radius: 10px;
+}
+li.ellipce__white {
+    background: #CECACA;
+}
+
+.skills {
+    position: absolute;
+    left: 21px; right: 15px; top: 640px;
+    width: 260px; height: 160px;
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+.skills > h3 {
+    margin: 14px 0 0 40px;
+}
 
 /*-------Aside--------------------------------------------------*/
 
@@ -122,6 +190,96 @@ color: #CECACA;
     margin: 10px 13px 10px 316px;
     background: #FFFFFF;
     border-radius: 10px;
+}
+.aside {
+    position: absolute;
+    left: 14px;
+    
+}
+.about__me > h3 {
+    position: absolute;
+    top: 35px;
+    width: 154px;
+    height: 24px;
+    padding: 5px;
+
+    color: #FFFFFF;
+    text-align: center;
+    background: #545454;
+    border-radius: 5px;
+}
+.about__me > p {
+    position: absolute;
+    top: 84px;
+    width: 295px;
+    height: auto;
+}
+.education {
+    position: absolute;
+    top: 256px;
+}
+.education > h3 {
+    position: absolute;
+    top: 0;
+    width: 154px;
+    height: 24px;
+    padding: 5px;
+
+    color: #FFFFFF;
+    text-align: center;
+    background: #545454;
+    border-radius: 5px;
+}
+.education > p {
+    position: absolute;
+    top: 52px;
+    width: 295px;
+    height: auto;
+}
+.courses {
+    position: absolute;
+    top: 435px;
+}
+.courses > h3 {
+    position: absolute;
+    top: 0;
+    width: 154px;
+    height: 24px;
+    padding: 5px;
+
+    color: #FFFFFF;
+    text-align: center;
+    background: #545454;
+    border-radius: 5px;
+}
+.courses > ul {
+    position: absolute;
+    top: 52px;
+    width: 295px;
+    height: auto;
+}
+.code__example {
+    position: absolute;
+    top: 620px;
+}
+.code__example > h3 {
+    position: absolute;
+    top: 0;
+    width: 154px;
+    height: 24px;
+    padding: 5px;
+
+    color: #FFFFFF;
+    text-align: center;
+    background: #545454;
+    border-radius: 5px;
+}
+pre {
+    position: absolute;
+    left: -230px; top: 50px;
+    width: auto;
+    height: auto;
+    margin: 0;
 }
 
 /*-------Footer--------------------------------------------------*/
