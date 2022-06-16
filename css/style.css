@@ -1,0 +1,340 @@
+
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* Убираем маркеры */
+}
+[data-tooltip] {
+    position: static; /* Относительное позиционирование */ 
+}
+[data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: 300px; /* Ширина подсказки */
+    left: 0; top: 0; /* Положение подсказки */
+    background: #3989c9; /* Синий цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0); /* Параметры тени */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */
+} 
+[data-tooltip]:hover::after {
+    opacity: 1; /* Показываем подсказку */
+    top: 2em; /* Положение подсказки */
+}
+[data-tooltip]::after {
+  content: attr(data-tooltip); /* Выводим текст */
+}
+/*-------Page--------------------------------------------------*/
+body {
+    margin: 0;
+    font-family: 'Calibri', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+.all__page {
+    position: absolute;
+    width: 650px;
+    height: 897px;
+    left: 350px;
+    background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 93.75%);
+}
+
+/*-------Main--------------------------------------------------*/
+.left__column {
+    position: absolute;
+    width: 296px;
+    height: 830px;
+    margin: 10px 340px 10px 14px;
+    background: rgba(196, 196, 196, 0.3);
+    border-radius: 10px;
+}
+
+.header {
+    position: absolute;
+    width: 272px;
+    height: 116.02px;
+    padding: 10px 12px 0 11px;
+}
+
+.my__foto{
+    position: absolute;
+    width: 110px;
+    height: 116.02px;
+}   
+.my__foto > img{
+    background: url(./img/MYIMG.jpg);
+    border-radius: 93px;
+}
+
+.name {
+    position: absolute;
+    left: 120px;
+    width: 148px;
+    height: 116.02px;
+    margin: 0;
+    padding-left: 15px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 27px;
+    
+    color: #FFFFFF;  
+}
+
+h2 {
+    margin: 0;
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #CECACA;
+}
+
+.contacts {
+    position: absolute;
+    left: 21px; right: 15px; top: 146px;
+    font-style: normal;
+    font-size: 15px;
+    color: #FFFFFF;
+    
+}
+.mail {
+    display: flex;
+    width: 260px; height: 38px;
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: 10px;
+}
+.mail > img {
+    padding: 11px 0 0 11px;
+}
+.mail > p {
+    padding: 11px 11px 11px 20px;
+}
+.telegram {
+    display: flex;
+    width: 260px; height: 38px;
+    margin-top: 10px;
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: 10px;
+}
+.telegram > img {
+    padding: 11px 0 0 11px;
+}
+.telegram > p {
+    padding: 11px 11px 11px 20px;
+}
+.discord {
+    display: flex;
+    width: 260px; height: 38px;
+    margin-top: 10px;
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: 10px;
+}
+.discord > img {
+    padding: 11px 0 0 11px;
+}
+.discord > p {
+    padding: 11px 11px 11px 20px;
+}
+
+.languages {
+    position: absolute;
+    left: 21px; right: 15px; top: 328px; bottom: 350px;
+    width: 260px; height: 266px;
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+.languages > h3 {
+    margin: 14px 0 0 40px;
+}
+.languages > ul {
+    margin: 10px 20px;
+}
+.lang {
+    display: flex;
+    padding-bottom: 10px;
+}
+.lang > p {
+    width: 80px;
+}
+.ellipse > li {
+    left: 200px;
+    display: inline-block;
+    border: 1px solid;
+    width: 85px; right: 19px;
+    margin-right: 4px;
+    background: rgba(84, 84, 84, 0.6);
+    width: 8px; height: 8px;
+    border-radius: 10px;
+}
+li.ellipce__white {
+    background: #CECACA;
+}
+
+.skills {
+    position: absolute;
+    left: 21px; right: 15px; top: 640px;
+    width: 260px; height: 160px;
+    background: rgba(196, 196, 196, 0.35);
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+.skills > h3 {
+    margin: 14px 0 0 40px;
+}
+
+/*-------Aside--------------------------------------------------*/
+
+.right__column {
+    position: absolute;
+    width: 321px;
+    height: 830px;
+    margin: 10px 13px 10px 316px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.aside {
+    position: absolute;
+    left: 14px;
+    
+}
+.about__me > h3 {
+    position: absolute;
+    top: 35px;
+    width: 154px;
+    height: 24px;
+    padding: 5px;
+
+    color: #FFFFFF;
+    text-align: center;
+    background: #545454;
+    border-radius: 5px;
+}
+.about__me > p {
+    position: absolute;
+    top: 84px;
+    width: 295px;
+    height: auto;
+}
+.education {
+    position: absolute;
+    top: 256px;
+}
+.education > h3 {
+    position: absolute;
+    top: 0;
+    width: 154px;
+    height: 24px;
+    padding: 5px;
+
+    color: #FFFFFF;
+    text-align: center;
+    background: #545454;
+    border-radius: 5px;
+}
+.education > p {
+    position: absolute;
+    top: 52px;
+    width: 295px;
+    height: auto;
+}
+.courses {
+    position: absolute;
+    top: 435px;
+}
+.courses > h3 {
+    position: absolute;
+    top: 0;
+    width: 154px;
+    height: 24px;
+    padding: 5px;
+
+    color: #FFFFFF;
+    text-align: center;
+    background: #545454;
+    border-radius: 5px;
+}
+.courses > ul {
+    position: absolute;
+    top: 52px;
+    width: 295px;
+    height: auto;
+}
+.code__example {
+    position: absolute;
+    top: 620px;
+}
+.code__example > h3 {
+    position: absolute;
+    top: 0;
+    width: 154px;
+    height: 24px;
+    padding: 5px;
+
+    color: #FFFFFF;
+    text-align: center;
+    background: #545454;
+    border-radius: 5px;
+}
+pre {
+    position: absolute;
+    left: -230px; top: 50px;
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+/*-------Footer--------------------------------------------------*/
+
+footer {
+    display: flex;
+    position: absolute;
+    left: 13px; right: 0; bottom: 0;
+    width: 625px; height: 50px;
+    margin: 0;
+    
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 10px;
+}
+
+.my-github {
+    padding: 8px 0 0 10px;
+}
+
+.year {
+    position: absolute;
+    left: 274px;
+    margin: 0;
+    padding: 18px 0 0 0;
+    color: white;
+}
+
+.rs-school {
+    position: absolute;
+    right: 0;
+    padding: 8px 10px 0 0;
+    margin: 0;
+}
