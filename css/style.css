@@ -45,7 +45,8 @@ ul {
 }
 /*-------Page--------------------------------------------------*/
 body {
-    margin: 0;
+    max-width: 650px;
+    margin: auto;
     font-family: 'Calibri', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -55,7 +56,6 @@ body {
     position: absolute;
     width: 650px;
     height: 897px;
-    left: 350px;
     background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 93.75%);
 }
 
@@ -78,12 +78,13 @@ body {
 
 .my__foto{
     position: absolute;
-    width: 110px;
-    height: 116.02px;
+    
 }   
 .my__foto > img{
     background: url(./img/MYIMG.jpg);
     border-radius: 93px;
+    width: 110px;
+    height: 116px;
 }
 
 .name {
@@ -216,6 +217,7 @@ li.ellipce__white {
     background: #FFFFFF;
     border-radius: 10px;
 }
+
 .aside {
     position: absolute;
     left: 14px;
@@ -241,7 +243,7 @@ li.ellipce__white {
 }
 .education {
     position: absolute;
-    top: 256px;
+    top: 193px;
 }
 .education > h3 {
     position: absolute;
@@ -263,7 +265,7 @@ li.ellipce__white {
 }
 .courses {
     position: absolute;
-    top: 435px;
+    top: 338px;
 }
 .courses > h3 {
     position: absolute;
@@ -283,10 +285,33 @@ li.ellipce__white {
     width: 295px;
     height: auto;
 }
+.project {
+    position: absolute;
+    top: 514px;
+}
+.project > h3 {
+    position: absolute;
+    top: 0;
+    width: 154px;
+    height: 24px;
+    padding: 5px;
+
+    color: #FFFFFF;
+    text-align: center;
+    background: #545454;
+    border-radius: 5px;
+}
+.project > a {
+    position: absolute;
+    top: 52px;
+    width: 295px;
+    height: auto;
+}
 .code__example {
     position: absolute;
-    top: 620px;
+    top: 676px;
 }
+
 .code__example > h3 {
     position: absolute;
     top: 0;
