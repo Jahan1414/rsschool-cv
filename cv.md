@@ -1,4 +1,4 @@
-# Zhakhonsha Ikramov
+# Jahan Ikramov
 
 ## Contacts:
 * Phone: +7 992 340 3654
